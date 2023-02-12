@@ -1,0 +1,262 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ *{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+ }
+ header{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .logo{
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em; 
+    padding-left: 50px; 
+ }
+ .navigation a{
+    text-decoration: none;
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 20px;
+ }
+.navigation a:hover{
+    color: purple;
+}
+
+.vd{
+    padding: 0;
+    position: relative;  
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+video{
+    position: absolute;
+}
+.maindiv{
+    position: absolute;
+    padding: 100px 100px;
+    min-height: 100vh;
+}
+section{
+    padding: 50px 50px;
+}
+
+.maindiv h2{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+h2>span{
+    display: inline-block;
+    margin-top: 10px;  
+    color: #3a6cf4;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+h3, .maindiv h3{
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.mainbtn{
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    color: white;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    z-index: 900;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: 0.6s ease;
+}
+.mainbtn:hover{
+    background-color: blue;
+    transform: scale(1.1);
+}
+.socialicons a{
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.cards{
+     margin-top: 10em;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;    
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card, .projectcard{
+    background-color: white;
+    width: 28%;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.6s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.icon img{
+    width: 100%;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+
+.Projects{
+    background-color: rgb(5, 6, 15);
+}
+.Projects.content{
+    margin-top: 30px;
+}
+.projectcard{
+    background-color: white;
+    border:1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.6s ease;
+}
+.projectimage img{
+    width: 100%; 
+    height: 10em;
+}
+.projectinfo{
+    padding: 1em;
+}
+.projectcard{
+    width: 28%;
+}
+.projectcategory{
+    font-size: 1.2em;
+    color: #3a6cf4;
+}
+.projecttitle{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight:800;
+    margin-top:10px;
+}
+.moredetails {
+    text-decoration: none;
+    color: purple;
+}
+.moredetails:hover{
+    color: aqua;
+}
+.projectcard:hover{
+    transform: scale(1.1);
+}
+.projectcard:hover .projectimage{
+    opacity: 0.9;
+}
+
+
+footer{
+    background-color: black;
+    color:white;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer p{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footertitle span{
+    color: #3a6cf4;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 1.8em;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .maindiv h2{
+        font-size:  1em;
+    }
+    .maindiv h3{
+        font-size:  1.6em;
+    }
+    .socialicons{
+        padding-bottom: -10px;
+    }
+
+    .socialicons a{
+        font-size:  1.2em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 11px;
+    }
+    .maindiv h2{
+        font-size:  0.8em;
+        margin-top: 7em;
+    }
+    .maindiv h3{
+        font-size:  1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+}
