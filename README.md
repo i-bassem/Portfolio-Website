@@ -10,4 +10,3 @@ https://i-bassem.github.io/Portfolio-website/
 2- Clicking an item from navigation menu it should move you to that section wth smooth scrolling behavior.
 
 
-![Website](images/website.jpg)
