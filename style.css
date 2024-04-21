@@ -8,13 +8,18 @@
     scroll-behavior: smooth;
  }
  header{
-    background-color: white;
+    /* background-color: white; */
     width: 100%;
     position: fixed;
     z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    background: rgba(255, 255, 255, 0.6); /* White with a 70% opacity */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border for separation */
+    /* padding: 10px; Adding some padding for spacing */
+    backdrop-filter: blur(10px); /* Blurring effect like Apple */
  }
  .logo{
     text-decoration: none;
@@ -116,6 +121,19 @@ h3, .maindiv h3{
     flex-wrap: wrap;
     justify-content: center;
 }
+/* Reveal effect */
+.reveal{
+    position: relative;
+    transform: translateY(150px); 
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 .card, .projectcard{
     background-color: white;
     width: 28%;
